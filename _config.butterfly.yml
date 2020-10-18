@@ -838,12 +838,24 @@ inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="http://fmyhc.com:8088/fmyhc_static/foot.js"></script>
-    - '<div class="aplayer no-destroy" 
-    data-id="00367ndh4JENv6" data-server="tencent" 
-    data-type="artist" data-fixed="true" data-mini="true" 
-    data-listFolded="false" data-order="list" 
-    data-preload="none" data-autoplay="false" muted></div>'
+    - '<div class="aplayer no-destroy" id="aplayer"></div>
+    <script>
+        $(function(){
+            setTimeout(function(){
+                const ap = new APlayer({
+                container: document.getElementById("aplayer"),
+                    fixed: true,
+                    mini: true,
+                    audio: [{
+                        name: "电台直播",
+                        artist: "萤火虫网络电台",
+                        url: "http://fmyhc.com:8066/1022.mp3",
+                        cover: "http://fmyhc.com:8088/fmyhc_static/index_banner/dark-firefly.jpg"
+                    }]
+                });
+            },0);
+        });
+    </script>'
 
 # CDN
 # Don't modify the following settings unless you know how they work
