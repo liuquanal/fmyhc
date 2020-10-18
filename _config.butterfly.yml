@@ -535,7 +535,7 @@ canvas_nest:
 activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  shake: false #  open shake (抖動特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
@@ -846,6 +846,7 @@ inject:
                 container: document.getElementById("aplayer"),
                     fixed: true,
                     mini: true,
+                    autoplay: true,
                     audio: [{
                         name: "电台直播",
                         artist: "萤火虫网络电台",
