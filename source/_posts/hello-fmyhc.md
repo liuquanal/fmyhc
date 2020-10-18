@@ -1,5 +1,6 @@
 ---
 title: 您好，萤火虫网络电台！
+date: 2020-10-18 15:41:18
 cover: http://fmyhc.com:8088/fmyhc_static/cover/firefly.jpg
 tags:
   - hello
