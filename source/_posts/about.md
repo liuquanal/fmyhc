@@ -1,7 +1,7 @@
 ---
 title: 关于萤火虫网络电台的故事
 date: 2020-10-18 17:24:01
-cover: http://fmyhc.com:8088/fmyhc_static/cover/default.jpg
+cover: http://fmyhc.com:8088/fmyhc_static/index_banner/listen.jpg
 tags: 
   - about
 ---

@@ -8,9 +8,11 @@
 
 menu:
   家园: / || fas fa-home
-  日记: /archives/ || fas fa-archive
+  主播: /2020/10/20/dj/ || fas fa-microphone
+  纸条: /2020/10/18/zhitiao/ || fas fa-edit
   音乐: /2020/10/18/music/ || fas fa-music
-  点歌: /2020/10/18/diange/ || fas fa-edit
+  相册: /photo/ || fas fa-images
+  日记: /archives/ || fas fa-archive
   服务||fas fa-list:
     - 电台新浪微博 || https://weibo.com/139511022 || fas fa-link
     - 蜻蜓FM直播 || https://www.qingting.fm/radios/4998/ || fas fa-podcast
@@ -98,10 +100,10 @@ avatar:
   effect: false
 
 # The banner image of home page
-index_img: http://fmyhc.com:8088/fmyhc_static/index_banner/dark-firefly.jpg
+index_img: http://fmyhc.com:8088/fmyhc_static/index_banner/listen.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://fmyhc.com:8088/fmyhc_static/index_banner/dark-firefly.jpg
+default_top_img: http://fmyhc.com:8088/fmyhc_static/index_banner/listen.jpg
 
 # The banner image of archive page
 archive_img: 
@@ -142,7 +144,7 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - http://fmyhc.com:8088/fmyhc_static/index_banner/dark-firefly.jpg
+    - http://fmyhc.com:8088/fmyhc_static/index_banner/listen.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -252,7 +254,7 @@ sharejs:
 # https://www.addtoany.com/
 addtoany:
   enable: false
-  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+  item: wechat,sina_weibo,facebook,twitter,facebook_messenger,email,copy_link
 
 # Comments System
 # --------------------------------------
@@ -561,7 +563,7 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
@@ -677,7 +679,7 @@ newest_comments:
   limit: 6
   avatar: true
   leancloud:
-    enable: false
+    enable: true
     appId: YREY32z8OSJmwGId1z4sLTVe-gzGzoHsz # leancloud application app id
     appKey: wRWecagHBbs7IWed1k00l8cd # leancloud application app key
     serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -712,9 +714,9 @@ readmode: true
 
 # dark mode
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
-  button: true
+  button: false
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
@@ -851,7 +853,7 @@ inject:
                         name: "电台直播",
                         artist: "萤火虫网络电台",
                         url: "http://fmyhc.com:8066/1022.mp3",
-                        cover: "http://fmyhc.com:8088/fmyhc_static/index_banner/dark-firefly.jpg"
+                        cover: "http://fmyhc.com:8088/fmyhc_static/index_banner/listen.jpg"
                     }]
                 });
             },0);
